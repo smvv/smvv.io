@@ -1,0 +1,6 @@
+static/*.html
+static/theme*.css
+static/typeset.js
+static/posts
+dist
+node_modules

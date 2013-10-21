@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+$if(title)$
+    <title>$title$ | smvv.io</title>
+$else$
+    <title>smvv&rsquo;s input and output</title>
+$endif$
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/blog/static/theme.min.css" rel="stylesheet">
+    <link href="/blog/static/smvv.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Rosarivo' rel='stylesheet' type='text/css'>
+
+    <script src="//getbootstrap.com/assets/js/jquery.js"></script>
+    <script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="/blog/static/smvv.js"></script>
+    <script type="text/javascript" src="/blog/static/typeset.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" onclick="location.href='/blog/index.html'">
+        <h3>smvv&rsquo;s input and output</h3>
+        <p>About programming languages, compilers, and ideas.</p>
+      </div>
+
+      <div class="navbar">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/blog/index.html">Home</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+            <li><a href="/blog/cv.html">Curriculum Vitae</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content typeset">
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header>
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<h1 class="subtitle">$subtitle$</h1>
+$endif$
+$if(author)$
+<p class="written">Written by
+$for(author)$
+<span class="author">$author$</span>
+$endfor$
+$if(date)$on <span class="date">$date$</span>$endif$.</p>
+$endif$
+</header>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+      </div>
+
+$if(comments)$
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_shortname = 'smvv';
+
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+$endif$
+    </div>
+</body>
+</html>

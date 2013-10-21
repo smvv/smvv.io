@@ -1,0 +1,167 @@
+body {
+    background: url("bg.png") repeat scroll 0 0 rgb(221, 221, 221);
+    font-family: 'Rosarivo', serif;
+    font-size: 1.6em;
+}
+
+body > .container {
+    background: #fff;
+    margin: 20px auto;
+    padding: 0 50px 30px;
+    width: 720px;
+
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    color: #333;
+    margin: 1.2em 0;
+    text-align: justify;
+}
+
+a, a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+a {
+    color: #16c;
+}
+
+a:hover {
+    color: #469;
+}
+*/
+
+h1, h2, h3, h4 {
+    color: #111;
+    font-family: 'Rosarivo', serif;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+dt {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #666;
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 0 0 0 -130px;
+    padding: 4px;
+    position: absolute;
+    text-align: right;
+    width: 120px;
+}
+
+/* Header */
+
+.header {
+    padding: 20px 0;
+}
+
+.header h3 {
+    color: #0052a3;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header h3:hover {
+    text-decoration: underline;
+}
+
+.header p {
+    color: #999;
+    font-size: 0.9em;
+    margin-top: -6px;
+}
+
+header p.written {
+    color: #888;
+}
+
+/* Navigation */
+
+.navbar {
+    background: 0;
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.navbar a, .navbar a:hover {
+    border-top: 2px solid #fff;
+    text-decoration: underline !important;
+}
+
+.navbar .active a, .navbar .active a:hover {
+    border-top: 2px solid #ffb40f;
+    background: #fff;
+    color: #000;
+}
+
+.navbar-nav {
+    padding: 0 0 0 15px;
+}
+
+.navbar .nav > li {
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+        padding: 0;
+    }
+}
+
+/* code highlighting */
+
+.sourceCode pre {
+    border-radius: 0;
+}
+
+.sourceCode td.lineNumbers pre {
+    border-right: 0;
+}
+
+.numberLines td.sourceCode pre {
+    border-left: 0;
+}
+
+table.sourceCode td {
+    padding: 0
+}
+
+code span.kw { color: #007020; font-weight: bold; }
+code span.dt { color: #902000; }
+code span.dv { color: #40a070; }
+code span.bn { color: #40a070; }
+code span.fl { color: #40a070; }
+code span.ch { color: #4070a0; }
+code span.st { color: #4070a0; }
+code span.co { color: #60a0b0; font-style: italic; }
+code span.ot { color: #007020; }
+code span.al { color: #ff0000; font-weight: bold; }
+code span.fu { color: #06287e; }
+code span.er { color: #ff0000; font-weight: bold; }
